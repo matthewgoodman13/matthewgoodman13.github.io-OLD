@@ -1,4 +1,4 @@
-﻿**Matthew Goodman
+**Matthew Goodman
 February 11th 2019
 Montreal, Canada
 CS50 Final Project README**
@@ -23,15 +23,10 @@ Allows you to view, add new, edit, and delete courses to your account. All data 
 
 Making this section allowed me to start playing with Bootstrap Modals.
 
-## /courses
-Allows you to view, add new, edit, and delete courses to your account. All data is viewed in a Bootstrap Table. Adding, Editing, and Deleting data are all done within Bootstrap Modals.
-
-Making this section allowed me to start playing with Bootstrap Modals.
-
 ## Other Info
 The data from the different forms submitted are stored in an SQL database.
 
-This project definitely helped me to improve my Python, HTML, database, JavaScript and jQuery skills. 
+This project definitely helped me to improve my Python, HTML, database, JavaScript and jQuery skills.
 
 **THIS WAS CS50!**
 
