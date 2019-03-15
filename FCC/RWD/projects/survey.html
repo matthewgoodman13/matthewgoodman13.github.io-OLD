@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey</title>
+        <style>
+
+            body {
+                background-color: lightcoral;
+                font-family: Times;      
+                text-align: center;          
+            }
+
+            #form-container {
+                background-color: rgb(255, 241, 241);
+                width: 60%;
+                text-align: center;
+                border-color: black;
+                border-width: 3px;
+                border-style: solid;
+                display: inline-block;
+                line-height: 36px;                
+            }
+
+            #name-label, #email-label, #number-label, #dropdown-label, #favcolour-label, #pet-label, #funfact-label {
+                font-weight: bold;
+            }
+
+            #subinfo {
+                font-size: 12px;
+                line-height: 8px;
+                padding-top: 200px;
+            }
+
+            .form-textboxes {
+                width: 200px;
+            }
+
+            #funfact {
+                width: 300px;
+                height: 75px;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <main>
+            <div id="form-container">
+                <h1 id="title">Survey</h1>
+                <p id="description">This is a FreeCodeCamp Project. Please fill out the survey!</p>
+                <form id="survey-form">
+                    <div>
+                        <label id="name-label">Name:</label>
+                        <input id="name" class="form-textboxes" type="text" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label id="email-label">Email:</label>
+                        <input id="email" class="form-textboxes" type="email" placeholder="Your Email" required>
+                    </div>
+                    <div>
+                        <label id="number-label">Age:</label>
+                        <input id="number" class="form-textboxes" type="number" placeholder="Your Age" min="1" max="120">
+                    </div>
+                    <div>
+                        <label id="dropdown-label">Gender:</label>
+                        <select class="form-textboxes" id="dropdown">
+                            <option value="none" disabled selected>Please Select</option>
+                            <option value="none">Male</option>
+                            <option value="none">Female</option>
+                            <option value="none">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label id="favcolour-label">Favourite Colour:</label>
+                        <label for="Red"><input id="Red" type="radio" value="red" name="colours">Red</label>
+                        <label for="Blue"><input id="Blue" type="radio" value="blue" name="colours">Blue</label>
+                        <label for="Green"><input id="Green" type="radio" value="green" name="colours">Green</label>
+                        <label for="Purple"><input id="Purple" type="radio" value="purple" name="colours">Purple</label>
+                        <label for="Yellow"><input id="Yellow" type="radio" value="yellow" name="colours">Yellow</label>
+                        <label for="Pink"><input id="Pink" type="radio" value="pink" name="colours">Pink</label>
+                        <label for="Orange"><input id="Orange" type="radio" value="orange" name="colours">Orange</label>
+                        <label for="White"><input id="White" type="radio" value="white" name="colours">White</label>
+                        <label for="Black"><input id="Black" type="radio" value="black" name="colours">Black</label>
+                        <label for="Other"><input id="Other" type="radio" value="other" name="colours">Other</label>
+                    </div>
+                    <div>
+                        <label id="pet-label">Pets:</label>
+                        <label for="cat"><input type="checkbox" id="cat" name="pets" value="cat">Cat</label>
+                        <label for="dog"><input type="checkbox" id="dog" name="pets" value="dog">Dog</label>
+                        <label for="fish"><input type="checkbox" id="fish" name="pets" value="fish">Fish</label>
+                        <label for="hamster"><input type="checkbox" id="hamster" name="pets" value="hamster">Hamster</label>
+                        <label for="snake"><input type="checkbox" id="snake" name="pets" value="snake">Snake</label>
+                        <label for="other"><input type="checkbox" id="other" name="pets" value="other">Other</label>
+                        <label for="none"><input type="checkbox" id="none" name="pets" value="none">None</label>
+                    </div>
+                    <div>
+                        <label id="funfact-label" for="funfact">One Fun Fact About You:</label>
+                    </div>
+                    <div>
+                        <textarea id="funfact" placeholder="One Fun Fact About You"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" id="submit">Submit Form</button>
+                    </div> 
+                    <p><i><b>Note:</b> The actual form does not get submitted anywhere.</i></p>
+                </form>
+            </div>
+                <div id="subinfo">
+                    <hr>
+                    <p>Matthew Goodman</p>
+                    <p>FreeCodeCamp Project: Survey</p>
+                    <p>March 2019</p>
+                </div>
+        </main>
+    </body>
+</html>

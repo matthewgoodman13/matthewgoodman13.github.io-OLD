@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <style>
             
-            main {
+            main, body {
                 text-align: center;
                 background-color: rgb(243, 243, 243);
                 font-family: 'Quicksand', sans-serif;
@@ -17,6 +17,8 @@
 
             #image {
                 width: 400px;
+                max-width: 100%;
+                display: inline-block;
             }
 
             #image:hover {
@@ -59,6 +61,7 @@
             #subinfo {
                 font-size: 12px;
                 line-height: 8px;
+                padding-top: 100px;
             }
 
 
@@ -114,10 +117,10 @@
                         </tr>
                     </table>
                 </div>
-                <p id="tribute-link">See Kotkaniemi's stats on <a href="http://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=207533" target="_blank">HockeyDB</a>.</p>
-
-                <hr>
+                <p>See Kotkaniemi's stats on <a id="tribute-link" href="http://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=207533" target="_blank">HockeyDB</a>.</p>
+               
                 <div id="subinfo">
+                    <hr>
                     <p>Matthew Goodman</p>
                     <p>FreeCodeCamp Project: Tribute</p>
                     <p>March 2019</p>
