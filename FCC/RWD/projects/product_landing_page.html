@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Avocado Stapler</title>
+        <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
+
+        <style>
+            
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            header {
+                height: 60px;
+                display: grid;
+                background-color: rgb(1, 141, 1);
+                z-index: -1;
+                
+            }
+
+            body {
+                background-color: rgb(232, 255, 232);
+            }
+
+            #header-img {
+                height: 60px;
+            }
+
+            #navbar-container {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                border-bottom: 4px;
+                border-bottom-style: solid;
+                border-color: black;
+                position: fixed;
+                top: 0;
+                background-color: rgb(1, 141, 1);
+            }
+
+            #nav-title {
+                color: white;
+                font-size: 40px;
+                padding-top: 6px;
+                padding-left: 10px;
+                font-family: 'Lilita One', cursive;
+                background-color: rgb(1, 141, 1);
+                z-index: -1;
+            }
+
+            #nav-bar {
+                padding-left:400px;
+                padding-top: 16px;
+                background-color: rgb(1, 141, 1);
+                z-index: -1;
+                
+            }
+
+            .nav-link {
+                color: white;
+                font-family: 'Lilita One', cursive;
+                font-size: 24px;
+                padding-left: 40px;
+            }
+
+            #signup-container {
+                text-align: center;
+                background-color: lightgreen;
+                margin-top: 40px;
+                margin-left: 25%;
+                margin-right: 25%;
+                border: 2px solid black;
+                border-radius: 25px;
+                height: 200px;
+            }
+
+            .signup-title {
+                font-size: 32px;
+            }
+
+            #email {
+                height: 32px;
+                width: 450px;
+                margin-top: 20px;
+                border-radius: 25px;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            #submit {
+                height: 40px;
+                width: 250px;
+                margin-top: 16px;
+                font-size: 20px;
+                border-radius: 25px;
+                background-color: rgb(54, 148, 74);
+                color: white;
+                font-weight: bold;
+            }
+
+            #how-container {
+                text-align: center;
+            }
+
+            .step-nums {
+                margin-left: 14px;
+                margin-top: 5px;
+                color: white;
+                font-style: bold;
+            }
+
+            .step {
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(54, 148, 74);
+                width: 40px;
+                height: 40px;
+                margin-top: 40px;
+                margin-left: 25%;
+                border-radius: 25px;
+                border-color: black;
+                border-style: solid;
+                border-width: 1px;
+            }
+
+            .stepinfo {
+                margin-left: 420px;
+                position: relative;
+                bottom: 33px;
+                text-align: left;
+                font-size: 20px;
+                font-style: oblique;
+            }
+
+            #step-2 {
+                position: relative;
+                bottom: 30px;
+            }
+
+            #step2info {
+                position: relative;
+                bottom: 63px;
+            }
+
+            #video-container {
+                text-align: center;
+            }
+
+            #video {
+                border: 6px solid black;
+            }
+
+
+            @media (max-height: 800px) {
+                p {
+                font-size: 10px;
+                }
+            }
+
+            #subinfo {
+                font-size: 12px;
+                line-height: 16px;
+                padding-top: 100px;
+                text-align: center;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <main>
+
+            <header id="header">
+                <div id="navbar-container">
+                    <img id="header-img" src="staplerpic.jpg" alt="Pic of Stapler">
+                    <h1 id="nav-title">Avocado Stapler Inc.</h1>
+                    <nav id=nav-bar>
+                        <a id="signup" class="nav-link" href="#signup-container">Sign Up</a>
+                        <a id="howlink" class="nav-link" href="#step-1">How It Works</a>
+                        <a id="videolink" class="nav-link" href="#video">Video</a>
+                    </nav>
+                </div>                
+            </header>
+
+            <div id="signup-container">
+                <h3 class="signup-title">Are You Tired of Your Avocados</h3>
+                <h3 class="signup-title">Rolling Off The Counter?</h3>
+
+                <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                    <div>
+                        <input id="email" type="email" name="email" placeholder="Enter Your Email Address">
+                    </div>
+
+                    <div>
+                        <input type="submit" id="submit" name="submit-email">
+                    </div>
+                </form>
+            </div>
+
+            <div id=how-container>
+                <div id="step-1" class="step">
+                    <h2 class="step-nums">1</h2>     
+                </div>
+                <p class="stepinfo">Grab Your Avocado Stapler</p>
+                <div id="step-2" class="step">
+                    <h2 id="step-2h2" class="step-nums">2</h2>
+                </div>
+                <p id="step2info" class="stepinfo">Staple That Avocado To Your Counter!</p>
+            </div>
+
+            <div id="video-container">
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/lM-PD9Z8-IQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div id="subinfo">
+                    <hr>
+                    <p>Matthew Goodman</p>
+                    <p>FreeCodeCamp Project: Product Landing Page</p>
+                    <p>March 2019</p>
+                </div>
+        </main>
+    </body>
+</html>
