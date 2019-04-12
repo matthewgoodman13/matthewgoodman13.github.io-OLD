@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import { bindActionCreators } from 'redux'
@@ -14,6 +13,7 @@ class App extends Component {
     super(props)
 
     this.onUpdateUser = this.onUpdateUser.bind(this);
+    this.onApiRequest = this.onApiRequest.bind(this);
   }
 
   // componentDidMount() {
@@ -25,28 +25,26 @@ class App extends Component {
   onUpdateUser(event) {
     this.props.onUpdateUser(event.target.value);
   }
+
+  onApiRequest(event) {
+    this.props.onUpdateUser(event.target.value);
+  }
   
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          <hr />
-          <div style={{ backgroundColor: 'blue' }}>
+        <h1>Random Quote:</h1>
+
+          {/* <div className="quote-box">
             <input onChange={this.onUpdateUser} />
             { this.props.user }
+          </div> */}
+          <div className="quote-box">
+            <input onChange={this.onApiRequest} />
+            { this.props.quote }
           </div>
+
         </header>
       </div>
     );
@@ -63,21 +61,21 @@ const userSelector = createSelector(
   user => unregister
 );
 
-// const mapStateToProps = (state, props) => {
-//   return {
-//     products: state.products,
-//     user: state.user,
-//     userPlusProp: `${state.user} ${props.aRandomProps}`
-//   }  
-// };
-const mapStateToProps = createSelector(
-  productsSelector,
-  userSelector,
-  (products, user) => ({
-    products,
-    user
-  })
-);
+const mapStateToProps = (state, props) => {
+  return {
+    products: state.products,
+    user: state.user,
+    userPlusProp: `${state.user} ${props.aRandomProps}`
+  }  
+};
+// const mapStateToProps = createSelector(
+//   productsSelector,
+//   userSelector,
+//   (products, user) => ({
+//     products,
+//     user
+//   })
+// );
 
 const mapActionsToProps = {
   onUpdateUser: updateUser,

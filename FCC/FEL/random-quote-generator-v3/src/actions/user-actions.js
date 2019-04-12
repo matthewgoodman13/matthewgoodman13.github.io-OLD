@@ -24,15 +24,23 @@ export function showError() {
 export function apiRequest() {
     return dispatch => {
         $.ajax({
-            url: 'http://google.com',
-            success() {
-                console.log("SUCCESS");
-            },
-            error() {
-                console.log("ERROR");
-
-                dispatch(showError());
+            url: 'https://random-math-quote-api.herokuapp.com/',
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(result){
+                console.log(result);
+                dispatch(result);
             }
-        })
+            
+
+            // success() {
+            //     console.log("SUCCESS");
+            // },
+            // error() {
+            //     console.log("ERROR");
+
+            //     dispatch(showError());
+            // }
+        });
     }
 }
