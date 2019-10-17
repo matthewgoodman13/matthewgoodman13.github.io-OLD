@@ -136,6 +136,13 @@
     padding-top: 50px;
 }
 
+#bottomLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 340px;
+}
+
 
 
 @media (max-width: 768px) {
