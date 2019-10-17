@@ -1,0 +1,220 @@
+#matthewgoodmanlogo {
+    padding-top: 10px;
+    height: 70px;
+}
+
+
+#introHead {
+    font-size: 100px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bolder;
+    color: #fcc000;
+}
+
+#introLead {
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: #fcc000;
+
+}
+
+#introLead2 {
+    font-size: 30px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: #fcc000;
+
+}
+
+#frontintro {
+    position: relative;
+    top: -100px;
+}
+
+#frontimg-holder {
+    padding-bottom: 10px;
+}
+
+#profilepic {
+    height: 360px;
+}
+
+#aboutmeParagraph {
+    font-size: 24px;
+}
+
+#moreAboutButton {
+    position: relative;
+    top: -40px;
+}
+
+#profilepic2 {
+    height: 220px;
+    padding-bottom: 10px;
+}
+
+.interestItem {
+    padding-bottom: 10px;
+}
+
+.edu-photos {
+    height: 120px;
+}
+
+.edu-abbstT {
+    padding: 17px;
+}
+
+.edu-courses {
+    text-align: left;
+}
+
+.edu-course-title {
+    position: relative;
+    padding-top: 16px;
+}
+
+.edu-sublist {
+    text-align: left;
+    position: relative;
+    /* left: 100px; */
+}
+
+.online-title {
+    padding-top: 50px;
+}
+
+.online-desc {
+    font-size: 19px;
+    font-style: italic;
+}
+
+.onlinecourses-title {
+    padding-top: 100px;
+}
+
+#onlinecourses-text {
+    font-size: 22px;
+}
+
+.onlinecourses-pics {
+    height: 250px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  width: 72%;
+  left: 49px;
+}
+
+.cs50-n2t-cert {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.fcc-cert {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.onlinecourses-modal-links {
+    text-align: center;
+    color: black;
+}
+
+#skills-title {
+    padding-top: 20px;
+}
+
+#pdf {
+    padding-top: 50px;
+}
+
+
+
+@media (max-width: 768px) {
+    #matthewgoodmanlogo {
+      padding-top: 10px;
+      height: 60px;
+    }
+
+    #profilepic {
+        height: 200px;
+    }
+
+    #frontimg-holder {
+        padding-top: 100px;
+    }
+
+    #introHead {
+        font-size: 45px;
+        font-family: 'Inconsolata', monospace;
+        font-weight: bolder;
+        color: #fcc000;
+        padding-top: 10px;
+    }
+    
+    #introLead {
+        font-size: 30px;
+        font-family: 'Inconsolata', monospace;
+        font-weight: bolder;
+        letter-spacing: 3px;
+        color: #fcc000;
+        padding-top: 60px;
+    }
+
+    #introLead2 {
+        font-size: 22px;
+        font-family: 'Inconsolata', monospace;
+        font-weight: bolder;
+        letter-spacing: 3px;
+        color: #fcc000;
+        padding-top: 30px;
+
+    }
+
+    #aboutmeParagraph {
+        font-size: 20px;
+    }
+    
+    #profilepic2 {
+        height: 150px;
+        padding-bottom: 10px;
+    }
+
+    .edu-photos {
+        height: 150px;
+        padding-top: 40px;
+    }
+
+    .edu-courses-current {
+        direction: ltr;
+        text-align: left;
+    }
+
+    .edu-course-title-left {
+        position: relative;
+        left: 0px;
+    }
+    .edu-course-title-right {
+        position: relative;
+        left: 0px;
+    }
+
+    .edu-sublist {
+        text-align: left;
+        position: relative;
+        left: 0px;
+    }
+
+    #onlinecourses-text {
+        font-size: 18px;
+    }
+
+  }
