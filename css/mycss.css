@@ -1,8 +1,14 @@
 #matthewgoodmanlogo {
     padding-top: 10px;
     height: 70px;
+    transition: transform 1.2s;
 }
 
+#matthewgoodmanlogo:hover {
+    padding-top: 10px;
+    height: 70px;
+    transform: scale(1.1);
+}
 
 #introHead {
     font-size: 100px;
@@ -143,6 +149,31 @@
     width: 340px; 
 }
 
+.myButton {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    border-width: 5px;
+    border-color: #fcc000;
+    border-radius: 20px;
+    transition: transform .2s;
+    font-size: 18px;
+}
+
+.myButton:hover {
+    background-color: rgb(48, 48, 48);
+    color: #ffdb65;
+    transform: scale(1.1);
+}
+
+.onlineCourseTitle {
+    transition: transform .2s;
+}
+
+.onlineCourseTitle:hover {
+    transform: scale(1.1);
+    color: #fcc000;
+    cursor: pointer;
+}
 
 
 @media (max-width: 768px) {
