@@ -50,9 +50,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
-          <!-- <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li> -->
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#prev-work">Previous Work</a>
           </li>
@@ -349,6 +349,7 @@
     </div>
   </section>
 
+
   <!-- Skills -->
   <section class="page-section" id="skills">
       <div class="container">
@@ -363,7 +364,7 @@
         </div>
        
         <div class="row text-center">
-            <div class="col-md-12">
+            <div class="col-md-6">
               <h5 class="service-heading">Languages Spoken:</h5>
                 <li>English and French</li>
               <br>
@@ -372,7 +373,9 @@
                 <li>JavaScript</li>
                 <li>HTML, CSS</li>
                 <li>Python</li>
-              <br>
+              <br>              
+            </div>
+            <div class="col-md-6">
               <h5 class="service-heading">Proficient In Using:</h5>
                 <li>Windows OS</li>
                 <li>Microsoft Office Suite including <br>manipulating data with Excel.</li>
@@ -382,12 +385,53 @@
                   <li>Bash</li>                
                   <li>SQL Databases</li>                
             </div>
-          </div>
-  
-  
-        
+          </div>       
       </div>
   </section>
+
+
+  <section class="page-section" id="projects">
+    <div class="page-section">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 text-center">
+              <h2 id="projects-title" class="section-heading text-uppercase">Hackathons and Projects</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 text-center">
+              <div class="card project-card" style="width: 18rem;">
+                  <img src="/img/projects/keepup_logo.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title">KeepUp.space</h3>
+                    <h5 class="card-title">Winning <br>Hackathon Project</h5>
+                    <h5 class="card-title goldgradient">*Best Education Hack*</h5>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><b>Created At YHack 2019 <br>Yale University<br>October 2019</b></li>
+                        <li class="list-group-item">A Web Application
+                            that allows for real-time communication between students and professors during
+                            lectures.</li>
+                    </ul>
+                    <br>
+                    <a class="btn myButton" data-toggle="modal" href="#keepup-modal" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        More Info
+                    </a>
+                  </div>
+                </div>
+          </div>
+        </div>
+        
+
+          
+        
+      </div>
+    </div>
+  </section>
+
+
 
   <!-- Previous Work Experience -->
   <section class="page-section" id="prev-work">
@@ -691,6 +735,58 @@
               Link to <a style="color: navy" target="__blank" href="https://www.freecodecamp.org/certification/matthewgoodman13/javascript-algorithms-and-data-structures">Second Certificate</a>
              </p>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- KeepUp Modal -->
+  <div class="modal fade" id="keepup-modal" tabindex="-1" role="dialog" aria-labelledby="keepup-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="keepup-modal-label">KeepUp.space</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img src="/img/projects/keepup_logo.png" id="keepup-modal-pic" class="">
+            </div>
+            <h5>The Project:</h5>
+            <p>Our team created a web application
+                that allows for better real-time communication between students and professors during
+                lectures. KeepUp provides students with a platform where they can pose questions to the
+                professor in real-time and where professors can get an assessment of the percentage of the
+                class who are understanding their content.</p>
+            <p><b><u>This Project Was Built Using:</u></b></p>
+            <ul>
+              <li>FireBase - For Hosting and Backend Database</li>
+              <li>Bootstrap - A JavaScript Framework</li>
+            </ul>
+            <p><b><u>Project Links:</u></b></p>
+            <ul>
+              <li><a style="color: navy" target="__blank" href="https://devpost.com/software/keepup-htaqle">DevPost</a> - Hackathon Project Page With Demo Video</li>
+              <li><a style="color: navy" target="__blank" href="https://github.com/matthewgoodman13/KeepUp">GitHub</a> - Link To The Repository</li>
+              <li><a style="color: navy" target="__blank" href="https://keepup.space/">KeepUp.space</a> - Link To Project Website</li>
+            </ul>
+
+            <div class="text-center">
+              <div class="row">
+                <div class="col-lg-6">
+                    <img src="/img/projects/yhack_logo.jpg" id="yhack-modal-pic" class="">
+                </div>
+                <div class="col-lg-6">
+                  <img src="/img/projects/mlh.png" id="yhack-modal-pic" class="">
+                </div>
+              </div>
+                
+            </div>
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
