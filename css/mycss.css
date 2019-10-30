@@ -284,4 +284,9 @@
         font-size: 18px;
     }
 
+    #keepup-modal-pic {
+        width: 300px;
+        padding-bottom: 30px;
+    }
+
   }
