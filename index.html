@@ -22,6 +22,9 @@
   <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet" type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
 
+  <!-- Icon In Browser -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
 
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
@@ -50,9 +53,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
-          <!-- <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li> -->
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#prev-work">Previous Work</a>
           </li>
@@ -77,7 +80,7 @@
       
         <div id="introHead" class="">Hi, I'm Matthew!</div>
         <div id="introLead" class="">Welcome to my Personal Website!</div>
-        <div id="introLead2" class="">Explore My Interative Resume Below</div>
+        <div id="introLead2" class="">Explore My Interactive Resume Below</div>
 
       </div>
     </div>
@@ -92,8 +95,8 @@
               <img id="profilepic2" src="./img/profilepic2.png">
           </div>
           <h2 class="section-heading text-uppercase">About Me</h2>
-          <h3 id="aboutmeParagraph" class="section-subheading text-muted">Hi, I’m Matthew! I am a hardworking, creative and self-motivated recent graduate from John Abbott College. I just started studying Computer Science at McGill University in U1 and I am excited to pursue my goal of obtaining a career in the technology field.
-              <br><br>I am interested in obtaining an internship to further enhance my computer science knowledge and to obtain more experience as I explore the field. I am motivated to learn and will guarantee to bring great enthusiasm and an exemplary work ethic every single day.
+          <h3 id="aboutmeParagraph" class="section-subheading text-muted">Hi, I’m Matthew! I am a creative and self-motivated recent graduate from John Abbott College. I just started studying Computer Science at McGill University in U1 and I am excited to pursue my goal of obtaining a career in the technology field.
+              <br><br>I am interested in obtaining an internship to further enhance my computer science knowledge and to gain more experience as I explore the field. I am motivated to learn and will guarantee to bring great enthusiasm and an exemplary work ethic every single day.
           </h3>
         </div>
       </div>
@@ -314,7 +317,7 @@
             </a>
             <div class="portfolio-caption">
               <h4 class="onlineCourseTitle"><a data-toggle="modal" data-target="#n2t-modal">Nand2Tetris Part I</a></h4>
-              <p class="text-muted">The Hebrew University of Jeruselem</p>
+              <p class="text-muted">The Hebrew University of Jerusalem</p>
               <p class="text-muted">Coursera</p>
               <p style="color:#0a6901">Computer Architecture, Hardware,<br> Basic Assembly, HDL </p>
 
@@ -349,6 +352,7 @@
     </div>
   </section>
 
+
   <!-- Skills -->
   <section class="page-section" id="skills">
       <div class="container">
@@ -363,7 +367,7 @@
         </div>
        
         <div class="row text-center">
-            <div class="col-md-12">
+            <div class="col-md-6">
               <h5 class="service-heading">Languages Spoken:</h5>
                 <li>English and French</li>
               <br>
@@ -372,21 +376,73 @@
                 <li>JavaScript</li>
                 <li>HTML, CSS</li>
                 <li>Python</li>
+<<<<<<< HEAD
               <br>
               <h5 class="service-heading">Experience With:</h5>
                 <li>Linux, Bash</li>
                 <li>SQL Databases</li>
               <br>
+=======
+              <br>              
+            </div>
+            <div class="col-md-6">
+>>>>>>> cd18f1b3d3f15fa58c266a1c9354f0928427b44d
               <h5 class="service-heading">Proficient In Using:</h5>
                 <li>Windows OS</li>
                 <li>Microsoft Office Suite including <br>manipulating data with Excel.</li>
+                <br>
+                <h5 class="service-heading">Experience with:</h5>
+                  <li>Linux</li>
+                  <li>Bash</li>                
+                  <li>SQL Databases</li>                
             </div>
-          </div>
-  
-  
-        
+          </div>       
       </div>
   </section>
+
+
+  <section class="page-section" id="projects">
+    <div class="page-section">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 text-center">
+              <h2 id="projects-title" class="section-heading text-uppercase">Hackathons and Projects</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 text-center">
+              <div class="card project-card">
+                  <img src="/img/projects/keepup_logo.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title">KeepUp.space</h3>
+                    <h5 class="card-title">Winning <br>Hackathon Project</h5>
+                    <h5 class="card-title goldgradient">*Best Education Hack*</h5>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><b>Created At YHack 2019 <br>Yale University<br>October 2019</b></li>
+                        <li class="list-group-item">A Web Application
+                            that allows for real-time communication between students and professors during
+                            lectures.</li>
+                    </ul>
+                    <br>
+                    <a class="btn myButton" data-toggle="modal" href="#keepup-modal" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        More Info
+                    </a>
+                  </div>
+                </div>
+          </div>
+        </div>
+        
+
+          
+        
+      </div>
+    </div>
+  </section>
+
+
 
   <!-- Previous Work Experience -->
   <section class="page-section" id="prev-work">
@@ -487,14 +543,24 @@
                     </a>
                 </li>
                 <li class="list-inline-item">
-                  <a target="__blank" href="https://www.instagram.com/matthewgoodman13/">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
                   <a target="__blank" href="https://www.linkedin.com/in/matthewgoodman13">
                     <i class="fab fa-linkedin-in"></i>
                   </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="__blank" href="https://devpost.com/matthewgoodman">
+                      <i class="fab fa-dev"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="__blank" href="https://github.com/matthewgoodman13">
+                      <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="__blank" href="https://www.instagram.com/matthewgoodman13/">
+                      <i class="fab fa-instagram"></i>
+                    </a>
                 </li>
               </ul>
             </div>
@@ -505,7 +571,11 @@
           <div class="col-lg-8 mx-auto text-center">
             <h4>Download PDF Copy of Resume</h4>
             <p class="large text-muted">Feel Free To Download A PDF Copy of My Resume.</p>
+<<<<<<< HEAD
             <a href="ResumeB - Matthew Goodman - revJan v1.pdf" class="btn myButton"download>Download Copy</a>
+=======
+            <a href="Resume - Matthew Goodman - revOct v3.pdf" class="btn myButton"download>Download Copy</a>
+>>>>>>> cd18f1b3d3f15fa58c266a1c9354f0928427b44d
           </div>
         </div>
       </div>
@@ -690,6 +760,58 @@
               Link to <a style="color: navy" target="__blank" href="https://www.freecodecamp.org/certification/matthewgoodman13/javascript-algorithms-and-data-structures">Second Certificate</a>
              </p>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- KeepUp Modal -->
+  <div class="modal fade" id="keepup-modal" tabindex="-1" role="dialog" aria-labelledby="keepup-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="keepup-modal-label">KeepUp.space</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img src="/img/projects/keepup_logo.png" id="keepup-modal-pic" class="">
+            </div>
+            <h5>The Project:</h5>
+            <p>Our team created a web application
+                that allows for better real-time communication between students and professors during
+                lectures. KeepUp provides students with a platform where they can pose questions to the
+                professor in real-time and where professors can get an assessment of the percentage of the
+                class who are understanding their content.</p>
+            <p><b><u>This Project Was Built Using:</u></b></p>
+            <ul>
+              <li>Google Cloud's FireBase - For Hosting and Backend Database</li>
+              <li>Bootstrap - A JavaScript Framework</li>
+            </ul>
+            <p><b><u>Project Links:</u></b></p>
+            <ul>
+              <li><a style="color: navy" target="__blank" href="https://devpost.com/software/keepup-htaqle">DevPost</a> - Hackathon Project Page With Demo Video</li>
+              <li><a style="color: navy" target="__blank" href="https://github.com/matthewgoodman13/KeepUp">GitHub</a> - Link To The Repository</li>
+              <li><a style="color: navy" target="__blank" href="https://keepup.space/">KeepUp.space</a> - Link To Project Website</li>
+            </ul>
+
+            <div class="text-center">
+              <div class="row">
+                <div class="col-lg-6">
+                    <img src="/img/projects/yhack_logo.jpg" id="yhack-modal-pic" class="">
+                </div>
+                <div class="col-lg-6">
+                  <img src="/img/projects/mlh.png" id="yhack-modal-pic" class="">
+                </div>
+              </div>
+                
+            </div>
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
