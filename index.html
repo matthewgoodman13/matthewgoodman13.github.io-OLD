@@ -76,6 +76,7 @@
       <div id="frontintro" class="intro-text">
         <div id="frontimg-holder">
           <img id="profilepic" src="./img/profilepic_new_jan2020.png">
+          <!-- <img id="profilepic" src="./img/front_profilepic.png"> -->
         </div>
       
         <div id="introHead" class="">Hi, I'm Matthew!</div>
@@ -133,7 +134,7 @@
             </span>
             <h4 class="service-heading">Fun Facts About Me</h4>
               <li class="interestItem text-muted"><b>Age: </b>20 years old</li>
-              <li class="interestItem text-muted"><b>I Enjoy: </b>Playing Hockey and Working Out at the Gym</li>
+              <li class="interestItem text-muted"><b>I Enjoy: </b>Playing Hockey, Snowboarding and Working Out at the Gym</li>
               <li class="interestItem text-muted"><b>I Live & Grew Up In: </b>Montreal, Canada</li>
               <li class="interestItem text-muted"><b>Last Book: </b>A Brief History of Time, Stephen Hawking</li>
               <li class="interestItem text-muted"><b>My PC Build: </b>Ryzen 5, 16GB RAM, Samsung 250GB M.2 970 Evo SSD, 8GB MSI Radeon RX 580 Graphics.</li>
@@ -288,7 +289,7 @@
         </div>
         
         <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-3 col-sm-6 portfolio-item">
             <!-- Trigger CS50 modal -->
             <a class="portfolio-link" data-toggle="modal" data-target="#cs50-modal">
               <div class="portfolio-hover">
@@ -305,7 +306,7 @@
             </div>  
             
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-3 col-sm-6 portfolio-item">
              <!-- Trigger CS50 modal -->
             <a class="portfolio-link" data-toggle="modal" href="#n2t-modal">
               <div class="portfolio-hover">
@@ -323,7 +324,7 @@
 
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-3 col-sm-6 portfolio-item">
             <!-- Trigger FCC modal -->
             <a class="portfolio-link" data-toggle="modal" href="#fcc-modal">
               <div class="portfolio-hover">
@@ -338,6 +339,25 @@
               <p class="text-muted">Responsive Web Design</p>
               <p class="text-muted">JS Algorithms and Data Structures</p>
               <p style="color:#0a6901">HTML, CSS, JavaScript - ES6</p>
+              
+            </div>
+          </div>
+
+          
+          <div class="col-md-3 col-sm-6 portfolio-item">
+            <!-- Trigger NodeJS modal -->
+            <a class="portfolio-link" data-toggle="modal" href="#nodejs-modal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid onlinecourses-pics" src="img/portfolio/nodejs-logo.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4 class="onlineCourseTitle"><a data-toggle="modal" data-target="#nodejs-modal">NodeJS - The Complete Guide</h4></a>
+              <p class="text-muted">Udemy</p>
+              <p style="color:#0a6901">NodeJS, Express.js, Templating Engines, SQL ...</p>
               
             </div>
           </div>
@@ -441,8 +461,8 @@
                       </li>
                   </ul>
                   <br>
-                  <a class="btn myButton projectButton" data-toggle="modal" href="" role="button" aria-expanded="false" aria-controls="collapseExample" disabled>
-                      More Info Coming Soon
+                  <a class="btn myButton projectButton" target="__blank__" data-toggle="" href="https://devpost.com/software/mcfitt" role="button" aria-expanded="false" aria-controls="collapseExample" disabled>
+                      Link to DevPost
                   </a>
                 </div>
               </div>
@@ -780,6 +800,33 @@
         </div>
       </div>
   </div>
+
+
+  <!-- NodeJS Modal -->
+  <div class="modal fade" id="nodejs-modal" tabindex="-1" role="dialog" aria-labelledby="nodejs-modal-label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="nodejs-modal-label">NodeJS - The Complete Guide</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4>NodeJS - The Complete Guide</h4>
+          <br>
+          <p style="color: orange; font-weight: bold;">Under Construction (Feb 2020)</p>
+
+          <p><a href="https://www.udemy.com/course/nodejs-the-complete-guide" target="__blank__">Link</a> to the Course Page</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+
 
   <!-- KeepUp Modal -->
   <div class="modal fade" id="keepup-modal" tabindex="-1" role="dialog" aria-labelledby="keepup-modal-label" aria-hidden="true">
