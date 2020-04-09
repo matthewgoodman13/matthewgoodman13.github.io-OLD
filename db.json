@@ -1,0 +1,22 @@
+{
+  "users": [
+    { 
+		"id": 1, 
+		"firstname": "Matthew", 
+		"lastname": "Goodman",
+		"email": "matthewthegoodman@gmail.com",
+		"password": "matthew",
+		"ownedRooquests": [],
+		"savedRooquests":[]
+	}
+  ],
+   "rooquests": [
+    { 
+		"id": 1, 
+		"title": "Red Paint", 
+		"description": "Paint that is RED",
+		"price": 8.99,
+		"ownerID": 1
+	}
+  ]
+}
